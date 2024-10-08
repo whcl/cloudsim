@@ -8,7 +8,7 @@ class CloudletSchedulerSJF(CloudletScheduler):
         processes = [self.env.process(self.schedule_cloudlet(cloudlet)) for cloudlet in sorted_cloudlets]
         yield self.env.all_of(processes)
 
+        print(f"Total Execution Time: {self.total_execution_time}")
+
         for vm in self.max_utilization:
             print(f"\nVM {vm} utilization:\n {self.max_utilization[vm][0] * 100}% PEs\n, {self.max_utilization[vm][1] * 100}% RAM\n, {self.max_utilization[vm][2] *100}% Storage")
-
-   
