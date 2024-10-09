@@ -1,0 +1,17 @@
+{
+    "num_particles": 30,
+    "num_iterations": 100,
+    "inertia": 0.5,
+    "cognitive": 2,
+    "social": 2,
+    "bounds": [
+        [
+            -10,
+            10
+        ],
+        [
+            -10,
+            10
+        ]
+    ]
+}

@@ -3,7 +3,7 @@ import simpy
 from cloudsim.schedulers.fcfs import CloudletSchedulerFCFS
 from cloudsim.schedulers.sjf import CloudletSchedulerSJF
 from cloudsim.schedulers.roundrobin import CloudletSchedulerRoundRobin
-from cloudsim.schedulers.PS import PSOCloudletScheduler  # Импортируем класс PSOCloudletScheduler
+from cloudsim.schedulers.pso.PS import PSOCloudletScheduler  # Импортируем класс PSOCloudletScheduler
 import pandas as pd
 
 
